@@ -7,7 +7,7 @@ function _jld2(path::String)::Dict{String,Any}
 end
 
 # short circuit the loading of the data -
-SolarPVSet() = _load(joinpath(_PATH_TO_DATA, "PVvsSolarHeating.csv"));
+SolarPVSet() = _load(joinpath("CHEME 5760/CHEME5760_finalProject/data/PVvsSolarHeating.csv", "PVvsSolarHeating.csv"));
 CustomerSurveyDataSet() = _load(joinpath(_PATH_TO_DATA, "Factor-Hair-Revised.csv"));
 TravelChoiceSurveyDataSet() = _load(joinpath(_PATH_TO_DATA, "VoT_21-Jun-2016_11-20_full_data.csv"));
 MyPortfolioDataSet() = _jld2(joinpath(_PATH_TO_DATA, "OHLC-Daily-SP500-5-years-TD-1256.jld2"));
